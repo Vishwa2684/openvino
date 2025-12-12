@@ -16,7 +16,7 @@ class TestRot90(PytorchLayerTest):
                 super(aten_rot90, self).__init__()
                 self.k = k
                 self.dims = dims
-            def forward(self,x):
+            def forward(self, x):
                 return torch.rot90(x,self.k,self.dims)
         ref_net = None
         return aten_rot90(k,dims), ref_net, "aten::rot90"
