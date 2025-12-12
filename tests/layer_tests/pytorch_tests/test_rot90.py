@@ -32,6 +32,6 @@ class TestRot90(PytorchLayerTest):
     @pytest.mark.precommit_torch_export
     @pytest.mark.precommit_fx_backend
     
-    def test_rot_90(self,k,dims,ie_device,precision,ir_version):
+    def test_rot_90(self, k, dims, ie_device, precision, ir_version):
         self._test(*self.create_model(k,dims),ie_device, precision, ir_version,
                    dynamic_shapes=ie_device != "GPU")
