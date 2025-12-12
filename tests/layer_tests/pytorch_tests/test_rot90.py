@@ -9,7 +9,7 @@ from pytorch_layer_test_class import PytorchLayerTest
 
 class TestRot90(PytorchLayerTest):
     def _prepare_input(self):
-        return (np.random.uniform(0, 50, (2, 3, 4)).astype(np.float32),) 
+        return (np.random.uniform(0, 50, (2, 3, 4)).astype(np.float32),)
     def create_model(self,k,dims):
         class aten_rot90(torch.nn.Module):
             def __init__(self, k, dims=(0,1)):
