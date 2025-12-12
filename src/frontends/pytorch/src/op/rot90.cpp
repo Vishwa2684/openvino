@@ -19,7 +19,6 @@
 #include "openvino/op/broadcast.hpp"
 #include "utils.hpp"
 
-// Can't get rank of dynamic dimension
 namespace ov{
 namespace frontend{
 namespace pytorch{
