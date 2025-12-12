@@ -24,7 +24,6 @@ namespace frontend{
 namespace pytorch{
 namespace op{
 using namespace ov::op;
-// handle negative axes
 OutputVector translate_rot90(const NodeContext& context){
     
     num_inputs_check(context,1,3);
