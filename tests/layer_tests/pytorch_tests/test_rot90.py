@@ -19,7 +19,7 @@ class TestRot90(PytorchLayerTest):
             def forward(self, x):
                 return torch.rot90(x, self.k, self.dims)
         ref_net = None
-        return aten_rot90(k,dims), ref_net, "aten::rot90"
+        return aten_rot90(k, dims), ref_net, "aten::rot90"
     
     @pytest.mark.parametrize('k',[
        1,2,3,4,-1,-3
